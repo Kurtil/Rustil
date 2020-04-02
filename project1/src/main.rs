@@ -1,11 +1,15 @@
+mod test;
 
-use std::io::stdin;
-use std::cmp::Ordering;
+use test::printer;
 use rand::Rng;
+use std::cmp::Ordering;
+use std::io::stdin;
 
 fn main() {
-    println!("Guess the number!");
+    println!("Guess the number.");
     println!("Please input your guess.");
+
+    printer::print("Jeanjean");
 
     let secret_number = rand::thread_rng().gen_range(1, 101);
 
